@@ -8,6 +8,8 @@
  */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle\n");
+char echot[60];
+strcpy(echot, "\"Programming is like building a multilingual puzzle\n");
+puts(echot);
 return (0);
 }
