@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*main - entry point of programs
+*positive_or_negative - check if the number is positve or negative or zero
+*@i: the variable to be check
 *
 *Return: return 0
 */
