@@ -1,28 +1,30 @@
 #include "main.h"
+
 /**
-*times_table - prints the 9 times table
-*
-*Return: returns nothing
-*/
-void times_table(void)
+ *_strcpy - copies the string pointed to by src
+ * including the terminating null byte (\0)
+ * to the buffer pointed to by dest
+ * @dest: pointer to the buffer in which we copy the string
+ * @src: string to be copied
+ *
+ * Return: the pointer to dest
+ */
+char *_strcpy(char *dest, char *src)
 {
-int digit, mult, result;
-for (digit = 0; digit <= 9; digit++)
-{
-_putchar('0');
+	int len, i;
 
-for (mult = 1; mult <= 9; mult++)
-{
-_putchar(',');
-_putchar(' ');
-result = digit * mult;
-if (result <= 9)
-_putchar(' ');
-else
-_putchar((result / 10) + '0');
+	len = 0;
 
-_putchar((result % 10) + '0');
-}
-_putchar('\n');
-}
+	while (src[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = 0; i < len; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+
+	return (dest);
 }
